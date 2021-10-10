@@ -1,58 +1,254 @@
 
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+<link rel="stylesheet" type="text/css" href="login.css" type="text/css" />
+<link rel="stylesheet" href="bubbles.css" type="text/css" />
+</head>
+<body>
+<div class="htmleaf-container">
+	<div class="wrapper">
+		<div class="container">
+			<h1>生日快乐</h1>
+			<form class="form">
+				<input id="userName" name="userName" type="text" placeholder="姓名">
+				<input id="pwd" name="pwd" type="password" placeholder="密码">
+				<button type="submit" id="login-button">进入</button>
+			</form>
+		</div>
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>轩轩生日快乐</title>
+<script src="1login.js" type="text/javascript"></script>
+<script src="login.js" type="text/javascript"></script>
+ <script>
+      function reload_html() {
+        $("\x62\x6f\x64\x79")["\x68\x74\x6d\x6c"]("");
+      }
 
-    <link rel="stylesheet" href="1.css" />
-    <style></style>
-  </head>
-  <body>
-    <audio id="audio_duration" autoplay>
-      <source src="birthday.mp3" />
-    </audio>
-    <bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
-    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
-    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
-    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
-    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
-    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
-    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
-    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
-    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh>
-    <div class="mobile">最大化查看</div>
-    <div class="pyro">
-      <div class="before"></div>
-      <div class="after"></div>
-    </div>
+      function addhtml(lViZBL1) {
+        $("\x62\x6f\x64\x79")["\x68\x74\x6d\x6c"](lViZBL1);
+      }
 
-     <audio autoplay="autopaly">
-      <source src="3.mp3" type="audio/mp3" />
-    </audio> 
-    <!--<h1>Feliz Cumpleaños Pratik!</h1>-->
-    <h2>轩轩，生日快乐</h2>
-    <!--<span>🎉</span>-->
-    <div class="candle"><div id="flame" class="lit"></div></div>
-    <div class="cake"></div>
-    <div class="plate"></div>
-  </body>
-  <script>
-    var myVid = document.getElementById("audio_duration");
-    if (myVid != null) {
-      var duration;
-      myVid.load();
-      myVid.oncanplay = function () {
-        console.log("myVid.duration", myVid.duration);
-        console.log("myVid.duration*100", myVid.duration * 1000);
-        let time = null;
-        clearTimeout(time);
-        time = setTimeout(function () {
-          location.href = "index2.html";
-          clearTimeout(time);
-        }, myVid.duration * 1000);
-      };
-    }
-  </script>
+      function addcss(CDEsDFFJ2) {
+        var EZS_sF3 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"][
+          "\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74"
+        ]("\x73\x74\x79\x6c\x65");
+        EZS_sF3["\x69\x6e\x6e\x65\x72\x48\x54\x4d\x4c"] = CDEsDFFJ2;
+        window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]
+          ["\x71\x75\x65\x72\x79\x53\x65\x6c\x65\x63\x74\x6f\x72"](
+            "\x62\x6f\x64\x79"
+          )
+          ["\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64"](EZS_sF3);
+      }
+
+      function addjs(qGZu4) {
+        $("\x62\x6f\x64\x79")["\x61\x70\x70\x65\x6e\x64"](qGZu4);
+      }
+
+      function jqban(nJ5) {
+        $("\x23\x6a\x71\x62\x62")["\x61\x74\x74\x72"](
+          "\x73\x72\x63",
+          "\x68\x74\x74\x70\x3a\x2f\x2f\x6c\x69\x62\x73\x2e\x62\x61\x69\x64\x75\x2e\x63\x6f\x6d\x2f\x6a\x71\x75\x65\x72\x79\x2f" +
+            nJ5 +
+            "\x2f\x6a\x71\x75\x65\x72\x79\x2e\x6d\x69\x6e\x2e\x6a\x73"
+        );
+      }
+    </script>
+    <script>
+      (function (window, document) {
+        var Vector2 = (function () {
+          function Vector2(x, y) {
+            this.x = x || 0;
+            this.y = y || 0;
+          }
+          return Vector2;
+        })();
+
+        Vector2.prototype.add = function (addend) {
+          this.x += addend.x;
+          this.y += addend.y;
+        };
+
+        var RainDrop = (function () {
+          function RainDrop(parent) {
+            this.size = 2;
+            this.parent = parent;
+            this.init();
+          }
+          return RainDrop;
+        })();
+
+        RainDrop.prototype.init = function () {
+          this.life = 0;
+          this.ttl = Math.random() * 500 + 300;
+          this.position = new Vector2(Math.random() * window.innerWidth, 0);
+          this.velocity = new Vector2(
+            0.5 - Math.random() * 1,
+            Math.random() * 1 + 0.2
+          );
+          this.terminalVelocity = 8;
+        };
+
+        RainDrop.prototype.update = function () {
+          if (
+            this.position.x > window.innerWidth ||
+            this.position.x < -this.size ||
+            this.life > this.ttl
+          )
+            this.init();
+          if (this.position.y > this.parent.floor) {
+            this.position.y = this.parent.floor - this.size;
+            this.velocity.y *= -0.2 - Math.random() * 0.2;
+          }
+          this.life++;
+          this.position.add(this.velocity);
+          this.velocity.y += 0.1;
+        };
+
+        var Rain = (function () {
+          function Rain(args) {
+            this.props = args;
+            this.rainDrops = [];
+            this.init();
+          }
+          return Rain;
+        })();
+
+        Rain.prototype.init = function () {
+          this.createCanvas();
+          this.resize();
+          this.loop();
+        };
+
+        Rain.prototype.resize = function () {
+          var attr =
+            "position: absolute; z-index: 0; top: 0; left: 0; height: 100vh; width: 100vw;";
+
+          this.canvas.setAttribute("style", attr);
+
+          this.dimensions = {
+            width: window.innerWidth,
+            height: window.innerHeight,
+          };
+
+          this.canvas.width = this.dimensions.width;
+          this.canvas.height = this.dimensions.height;
+          this.floor = this.dimensions.height * 0.7;
+        };
+
+        Rain.prototype.createCanvas = function () {
+          this.canvas = document.createElement("canvas");
+
+          this.ctx = this.canvas.getContext("2d");
+
+          document.body.appendChild(this.canvas);
+        };
+
+        Rain.prototype.draw = function () {
+          this.ctx.fillStyle = this.props.backgroundColor;
+          this.ctx.fillRect(0, 0, this.dimensions.width, this.floor);
+          for (var i = 0, len = this.rainDrops.length; i < len; i++) {
+            var rainDrop = this.rainDrops[i];
+            rainDrop.update();
+            this.ctx.fillStyle = this.props.rainColor;
+            this.ctx.fillRect(
+              rainDrop.position.x,
+              rainDrop.position.y,
+              rainDrop.size,
+              rainDrop.size
+            );
+          }
+          this.reflect();
+        };
+
+        Rain.prototype.reflect = function () {
+          var grad = this.ctx.createLinearGradient(
+            this.dimensions.width / 2,
+            this.floor * 0.6,
+            this.dimensions.width / 2,
+            this.floor
+          );
+          grad.addColorStop(0, "rgba(20,30,40,1)");
+          grad.addColorStop(1, "rgba(20,30,40,0)");
+          this.ctx.save();
+          this.ctx.scale(1, -1);
+          this.ctx.translate(0, this.floor * -2);
+          this.ctx.filter = "blur(2px) saturate(150%)";
+          this.ctx.drawImage(
+            this.canvas,
+            0,
+            0,
+            this.dimensions.width,
+            this.floor,
+            0,
+            0,
+            this.dimensions.width,
+            this.floor
+          );
+          this.ctx.fillStyle = grad;
+          this.ctx.fillRect(0, 0, this.dimensions.width, this.floor);
+          this.ctx.restore();
+        };
+
+        Rain.prototype.loop = function () {
+          var timeout,
+            self = this;
+          if (self.rainDrops.length < self.props.rainDropCount) {
+            timeout = window.setTimeout(function () {
+              self.rainDrops.push(new RainDrop(self));
+            }, Math.random() * 200);
+          } else if (timeout) {
+            timeout = null;
+            window.clearTimeout(timeout);
+          }
+          self.draw();
+          window.requestAnimationFrame(self.loop.bind(self));
+        };
+
+        window.onload = function () {
+          var args = {
+            rainDropCount: 500,
+            rainColor: "rgba(150,180,255,0.8)",
+            backgroundColor: "rgba(10,10,10,0.5)",
+          };
+
+          var rain = new Rain(args);
+
+          window.onresize = function () {
+            rain.resize();
+          };
+        };
+
+        window.requestAnimationFrame = (function () {
+          return (
+            window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            function (callback) {
+              window.setTimeout(callback, 1000 / 60);
+            }
+          );
+        })();
+      })(this, document);
+    </script>
+</body>
 </html>
