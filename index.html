@@ -1,101 +1,58 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>易川的主页</title>
-<style>
-#header{
-	height: 10%;
-	padding: 5px;
-	float: center;
-	}
-#section{
-	height:100%;
-	width:20%;
-	float:left;
-	border-right:1px solid #000 ;
-}
-#area-render {
-      position: fixed;
-      width: 320px;
-      height: 160px;
-      right: 4px;
-      bottom: 4px;
-      border: dashed 1px #ccc;
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>轩轩生日快乐</title>
+
+    <link rel="stylesheet" href="1.css" />
+    <style></style>
+  </head>
+  <body>
+    <audio id="audio_duration" autoplay>
+      <source src="birthday.mp3" />
+    </audio>
+    <bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
+    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
+    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
+    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
+    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
+    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
+    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
+    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh
+    ><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh><bokeh></bokeh>
+    <div class="mobile">最大化查看</div>
+    <div class="pyro">
+      <div class="before"></div>
+      <div class="after"></div>
+    </div>
+
+     <audio autoplay="autopaly">
+      <source src="3.mp3" type="audio/mp3" />
+    </audio> 
+    <!--<h1>Feliz Cumpleaños Pratik!</h1>-->
+    <h2>轩轩，生日快乐</h2>
+    <!--<span>🎉</span>-->
+    <div class="candle"><div id="flame" class="lit"></div></div>
+    <div class="cake"></div>
+    <div class="plate"></div>
+  </body>
+  <script>
+    var myVid = document.getElementById("audio_duration");
+    if (myVid != null) {
+      var duration;
+      myVid.load();
+      myVid.oncanplay = function () {
+        console.log("myVid.duration", myVid.duration);
+        console.log("myVid.duration*100", myVid.duration * 1000);
+        let time = null;
+        clearTimeout(time);
+        time = setTimeout(function () {
+          location.href = "index2.html";
+          clearTimeout(time);
+        }, myVid.duration * 1000);
+      };
     }
-#content{
-	font-style:italic;
-	font-size:30px;
-	width:80%;
-	height:100%;}
-.footer{
-	bottom:0;}
-
-html, body{
-	height:100%;
-	width:100%;}
-</style>
-</head>
-
-<body>
-
-<h1 align="center">Welcome to YiChuan's homepage</h1>
-
-<div id="section"> 
-<br />
-<br />
-<br />
-
-<ul>
-<li>Math</li>
-<br />
-<br />
-<br />
-<li>Program</li>
-<br />
-<br />
-<br />
-<li>Daily</li>
-<br />
-<br />
-<br />
-<li>Reading</li>
-</ul>
-
-</div>
-<div id="content">
-<pre>    
-<strong>YiChuan's word:</strong>
-
-     Hello stranger(maybe not!), what a nice encounter in this big world online.
-     
-I am so excited that you pay a visit to my homepage .
-
-<strong>An Introduce Of Myself:</strong>
-
-     My name is YiChuan Yang(杨易川）, which is taken from my mother as my 
-     
-online name, also my pen name.As a Mathematics student of <a href="https://www.ccnu.edu.cn/",target="_blank">CCNU</a> I love math
-
-, computer programing, badminton, and reading as well.
-
-<strong>An Introduce Of My Page:</strong>
-
-     As you see on the left side, I will share my learning process(including
-     
-math, computer programing), the book I am reading and my daily routines.
-
-</pre>
-</div>
-<div class="footer">
-<strong>MyWechat:</strong>
-<br />
-<img src="mywechat.png" /></div> 
-<script type="text/javascript" color="black" pointColor="black" opacity='0.7' zIndex="-2" count="100" src="canvas-nest.js",width=300px height=300px></script>
-<script type="text/javascript">
-  var cn = new CanvasNest(document.getElementById('area-render'), {
-    color: '255,0,255',
-    count: 100,
-  });
-</body>
+  </script>
 </html>
